@@ -29,9 +29,8 @@ or
 4. Run the app in simulator/emulator:
 
 		$ npm run ios
-or
 
-	$ npm run android
+		$ npm run android
 
 > **Note:** The API URL is configured to `http://localhost:3000` by default. If you would like to change that, be sure to visit the official `README.md` file of [Meteor Client Bundler](https://github.com/Urigo/meteor-client-bundler) for detailed instructions.
 
