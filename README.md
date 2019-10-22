@@ -6,29 +6,27 @@ This is a React Native app which uses Meteor as its backend. It should be used a
 
 ## Quick Start
 
-Install all the dependencies:
+1. Install all the dependencies:
 
     $ npm install
 
-Bundle Meteor client:
-
-    $ npm run meteor-bundle-client
-
-Start the API server:
+2. Start the API server:
 
     $ npm run api
 
-Start the packager:
+3. Start Expo:
 
     $ npm start
 
-Run the app:
+or
 
-    $ react-native run-android
+4. Run the app:
 
-Or in case you're using iOS:
+    $ npm run ios
 
-    $ react-native run-ios
+Or in case you're using android:
+
+    $ npm run android
 
 > **Note:** The API URL is configured to `http://localhost:3000` by default. If you would like to change that, be sure to visit the official `README.md` file of [Meteor Client Bundler](https://github.com/Urigo/meteor-client-bundler) for detailed instructions.
 
