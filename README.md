@@ -8,15 +8,15 @@ This is a React Native app which uses Meteor as its backend. It should be used a
 
 1. Install all the dependencies:
 
-    $ npm install
+		$ npm install
 
 2. Start the API server:
 
-    $ npm run api
+		$ npm run api
 
 3. Start Expo:
 
-    $ npm start
+		$ npm start
 
 or
 
