@@ -3,26 +3,23 @@ import { withTracker } from 'meteor/react-meteor-data';
 import { MyCollection } from '../api/server/collections';
 import {
   Text,
-  ListView
+  FlatList
 } from 'react-native';
 
 class MyListView extends Component {
   render() {
-    const dataSource = new ListView.DataSource({
-      rowHasChanged: (r1, r2) => r1 !== r2
-    });
 
     return (
-      <ListView
-        enableEmptySections={true}
-        dataSource={dataSource.cloneWithRows(this.props.items)}
-        renderRow={this.renderRow.bind(this)}
+      <FlatList
+        data={this.props.items}
+        renderItem={this.renderRow.bind(this)}
+        keyExtractor={(item) => item._id }
       />
     );
   }
 
-  renderRow({ name }) {
-    return (<Text>{name}</Text>);
+  renderRow({ item }) {
+    return (<Text>{item.value}</Text>);
   }
 }
 
